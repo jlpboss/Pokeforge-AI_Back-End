@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends
 import requests
-from pokeforge.find_all_tiers import find_all_tiers
+from pokeforge.utils.find_all_tiers import find_all_tiers
 
 router = APIRouter()
 
