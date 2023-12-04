@@ -8,7 +8,6 @@ def calculate_batch_fitness(batch, realmons):
     fullsum = []
     for pokemon in batch:
         sumA = []
-        print(dir(pokemon))
         for pokemon2 in realmons:
             cython_pokemon_1 = cython_battle.Pokemon(batch[pokemon].name, batch[pokemon].baseStats)
             cython_pokemon_2 = cython_battle.Pokemon(realmons[pokemon2].name, realmons[pokemon2].baseStats)
