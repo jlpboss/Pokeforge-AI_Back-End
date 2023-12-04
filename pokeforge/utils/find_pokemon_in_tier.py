@@ -1,10 +1,11 @@
 import requests
+from pokeforge.schema.pokemonSchema import Pokemon
 def find_pokemon_in_tier(tier: str, all_pokemon: dict):
     out = {}
     for pokemon in all_pokemon:
         try:
             if all_pokemon[pokemon]['tier'] == tier:
-                out[pokemon] = all_pokemon[pokemon]
+                out[pokemon] = Pokemon(pokemon, all_pokemon[pokemon].baseStats)
         except:
             pass
     return out

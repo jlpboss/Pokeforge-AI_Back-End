@@ -12,6 +12,10 @@ class PokemonIn(BaseModel):
     types: List[str] 
     tier: str
 
-class Pokemon(BaseModel):
-    name: str
-    baseStats: Optional[Dict[str, int]]
+class Pokemon:
+    name: str 
+    baseStats: dict[str, int] 
+
+    def __init__(self, name: str, baseStats: dict[str, int]):
+        self.name = name
+        self.baseStats = baseStats
