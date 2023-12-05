@@ -1,4 +1,4 @@
-from pokemon_schema import Pokemon
+from pokeforge.PokeForgeSandbox.pokemon_schema import Pokemon
 
 def calc_dmg(atk, def_):
     # assume 50bp and stab
