@@ -5,7 +5,7 @@
     "distutils": {
         "name": "cython_battle",
         "sources": [
-            "/workspace/Pokeforge-AI_Back-End/pokeforge/utils/calc_battle_cython/cython_battle.pyx"
+            "pokeforge/utils/calc_battle_cython/cython_battle.pyx"
         ]
     },
     "module_name": "cython_battle"
@@ -1461,7 +1461,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "cython_battle.pyx",
+  "pokeforge/utils/calc_battle_cython/cython_battle.pyx",
   "<stringsource>",
 };
 /* #### Code section: utility_code_proto_before_types ### */
@@ -2242,13 +2242,13 @@ static const char __pyx_k_random_pokemon[] = "random_pokemon";
 static const char __pyx_k_calc_battle_win[] = "calc_battle_win";
 static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
-static const char __pyx_k_cython_battle_pyx[] = "cython_battle.pyx";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_pyx_unpickle_Pokemon[] = "__pyx_unpickle_Pokemon";
 static const char __pyx_k_Pokemon___reduce_cython[] = "Pokemon.__reduce_cython__";
 static const char __pyx_k_Pokemon___setstate_cython[] = "Pokemon.__setstate_cython__";
 static const char __pyx_k_Incompatible_checksums_0x_x_vs_0[] = "Incompatible checksums (0x%x vs (0xb0d06c3, 0x3df9077, 0x5c6076a) = (baseStats, name))";
+static const char __pyx_k_pokeforge_utils_calc_battle_cyth[] = "pokeforge/utils/calc_battle_cython/cython_battle.pyx";
 /* #### Code section: decls ### */
 static int __pyx_pf_13cython_battle_7Pokemon___init__(struct __pyx_obj_13cython_battle_Pokemon *__pyx_v_self, PyObject *__pyx_v_name, PyObject *__pyx_v_baseStats); /* proto */
 static PyObject *__pyx_pf_13cython_battle_7Pokemon_2__reduce_cython__(struct __pyx_obj_13cython_battle_Pokemon *__pyx_v_self); /* proto */
@@ -2309,7 +2309,6 @@ typedef struct {
   PyObject *__pyx_n_s_calculate_stat;
   PyObject *__pyx_n_s_cline_in_traceback;
   PyObject *__pyx_n_s_cython_battle;
-  PyObject *__pyx_kp_s_cython_battle_pyx;
   PyObject *__pyx_n_s_def;
   PyObject *__pyx_n_u_def_2;
   PyObject *__pyx_n_s_dict;
@@ -2328,6 +2327,7 @@ typedef struct {
   PyObject *__pyx_n_s_name_2;
   PyObject *__pyx_n_s_new;
   PyObject *__pyx_n_s_pickle;
+  PyObject *__pyx_kp_s_pokeforge_utils_calc_battle_cyth;
   PyObject *__pyx_n_s_pyx_PickleError;
   PyObject *__pyx_n_s_pyx_checksum;
   PyObject *__pyx_n_s_pyx_result;
@@ -2439,7 +2439,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_calculate_stat);
   Py_CLEAR(clear_module_state->__pyx_n_s_cline_in_traceback);
   Py_CLEAR(clear_module_state->__pyx_n_s_cython_battle);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_cython_battle_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_def);
   Py_CLEAR(clear_module_state->__pyx_n_u_def_2);
   Py_CLEAR(clear_module_state->__pyx_n_s_dict);
@@ -2458,6 +2457,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_name_2);
   Py_CLEAR(clear_module_state->__pyx_n_s_new);
   Py_CLEAR(clear_module_state->__pyx_n_s_pickle);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_pokeforge_utils_calc_battle_cyth);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_PickleError);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_checksum);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_result);
@@ -2547,7 +2547,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_calculate_stat);
   Py_VISIT(traverse_module_state->__pyx_n_s_cline_in_traceback);
   Py_VISIT(traverse_module_state->__pyx_n_s_cython_battle);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_cython_battle_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_def);
   Py_VISIT(traverse_module_state->__pyx_n_u_def_2);
   Py_VISIT(traverse_module_state->__pyx_n_s_dict);
@@ -2566,6 +2565,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_name_2);
   Py_VISIT(traverse_module_state->__pyx_n_s_new);
   Py_VISIT(traverse_module_state->__pyx_n_s_pickle);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_pokeforge_utils_calc_battle_cyth);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_PickleError);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_checksum);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_result);
@@ -2665,7 +2665,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_calculate_stat __pyx_mstate_global->__pyx_n_s_calculate_stat
 #define __pyx_n_s_cline_in_traceback __pyx_mstate_global->__pyx_n_s_cline_in_traceback
 #define __pyx_n_s_cython_battle __pyx_mstate_global->__pyx_n_s_cython_battle
-#define __pyx_kp_s_cython_battle_pyx __pyx_mstate_global->__pyx_kp_s_cython_battle_pyx
 #define __pyx_n_s_def __pyx_mstate_global->__pyx_n_s_def
 #define __pyx_n_u_def_2 __pyx_mstate_global->__pyx_n_u_def_2
 #define __pyx_n_s_dict __pyx_mstate_global->__pyx_n_s_dict
@@ -2684,6 +2683,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_name_2 __pyx_mstate_global->__pyx_n_s_name_2
 #define __pyx_n_s_new __pyx_mstate_global->__pyx_n_s_new
 #define __pyx_n_s_pickle __pyx_mstate_global->__pyx_n_s_pickle
+#define __pyx_kp_s_pokeforge_utils_calc_battle_cyth __pyx_mstate_global->__pyx_kp_s_pokeforge_utils_calc_battle_cyth
 #define __pyx_n_s_pyx_PickleError __pyx_mstate_global->__pyx_n_s_pyx_PickleError
 #define __pyx_n_s_pyx_checksum __pyx_mstate_global->__pyx_n_s_pyx_checksum
 #define __pyx_n_s_pyx_result __pyx_mstate_global->__pyx_n_s_pyx_result
@@ -5214,7 +5214,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_calculate_stat, __pyx_k_calculate_stat, sizeof(__pyx_k_calculate_stat), 0, 0, 1, 1},
     {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
     {&__pyx_n_s_cython_battle, __pyx_k_cython_battle, sizeof(__pyx_k_cython_battle), 0, 0, 1, 1},
-    {&__pyx_kp_s_cython_battle_pyx, __pyx_k_cython_battle_pyx, sizeof(__pyx_k_cython_battle_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_def, __pyx_k_def, sizeof(__pyx_k_def), 0, 0, 1, 1},
     {&__pyx_n_u_def_2, __pyx_k_def_2, sizeof(__pyx_k_def_2), 0, 1, 0, 1},
     {&__pyx_n_s_dict, __pyx_k_dict, sizeof(__pyx_k_dict), 0, 0, 1, 1},
@@ -5233,6 +5232,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_name_2, __pyx_k_name_2, sizeof(__pyx_k_name_2), 0, 0, 1, 1},
     {&__pyx_n_s_new, __pyx_k_new, sizeof(__pyx_k_new), 0, 0, 1, 1},
     {&__pyx_n_s_pickle, __pyx_k_pickle, sizeof(__pyx_k_pickle), 0, 0, 1, 1},
+    {&__pyx_kp_s_pokeforge_utils_calc_battle_cyth, __pyx_k_pokeforge_utils_calc_battle_cyth, sizeof(__pyx_k_pokeforge_utils_calc_battle_cyth), 0, 0, 1, 0},
     {&__pyx_n_s_pyx_PickleError, __pyx_k_pyx_PickleError, sizeof(__pyx_k_pyx_PickleError), 0, 0, 1, 1},
     {&__pyx_n_s_pyx_checksum, __pyx_k_pyx_checksum, sizeof(__pyx_k_pyx_checksum), 0, 0, 1, 1},
     {&__pyx_n_s_pyx_result, __pyx_k_pyx_result, sizeof(__pyx_k_pyx_result), 0, 0, 1, 1},
@@ -5319,7 +5319,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_base_hp); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_battle_pyx, __pyx_n_s_calculate_hp, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pokeforge_utils_calc_battle_cyth, __pyx_n_s_calculate_hp, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "cython_battle.pyx":14
  *     return (base_hp * 2) + 110
@@ -5331,7 +5331,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__9 = PyTuple_Pack(1, __pyx_n_s_stat); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_battle_pyx, __pyx_n_s_calculate_stat, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pokeforge_utils_calc_battle_cyth, __pyx_n_s_calculate_stat, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 14, __pyx_L1_error)
 
   /* "cython_battle.pyx":17
  *     return (stat * 2) + 5
@@ -5343,7 +5343,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__11 = PyTuple_Pack(5, __pyx_n_s_atk, __pyx_n_s_def, __pyx_n_s_bp, __pyx_n_s_stab, __pyx_n_s_modifier); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_battle_pyx, __pyx_n_s_calc_dmg, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pokeforge_utils_calc_battle_cyth, __pyx_n_s_calc_dmg, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 17, __pyx_L1_error)
   __pyx_tuple__13 = PyTuple_Pack(3, __pyx_int_50, __pyx_float_1_5, __pyx_float_1_065); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
@@ -5358,7 +5358,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_random_pokemon, __pyx_n_s_real_pokemon); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_cython_battle_pyx, __pyx_n_s_calc_battle_win, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pokeforge_utils_calc_battle_cyth, __pyx_n_s_calc_battle_win, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_Pokemon(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
