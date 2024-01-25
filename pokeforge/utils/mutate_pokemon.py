@@ -3,12 +3,12 @@ import random
 
 
 def mutate_pokemon(pokemon: Pokemon):
-    baseStatsCopy = pokemon.baseStats
-    for stat in baseStatsCopy:
-        baseStatsCopy[stat] = round(float(baseStatsCopy[stat]) * (0.5 + random.random()))
-    pokemon.baseStats = baseStatsCopy
+    # baseStatsCopy = pokemon.baseStats
+    for stat in pokemon.baseStats:
+        if random.random() > 0.70:
+            rand_num = random.randint(-1,1)
+            if rand_num + pokemon.baseStats[stat] > 0:
+                pokemon.baseStats[stat] = int(round(float(pokemon.baseStats[stat]) + rand_num))
+            
+    # pokemon.baseStats = baseStatsCopy
     return pokemon
-
-if __name__ == '__main__':
-    testmon = Pokemon(name = 'test', baseStats={"hp":45,"atk":49,"def":49,"spa":65,"spd":65,"spe":45})
-    mutate_pokemon(testmon)

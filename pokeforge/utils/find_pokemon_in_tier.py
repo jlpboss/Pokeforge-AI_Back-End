@@ -5,7 +5,9 @@ def find_pokemon_in_tier(tier: str, all_pokemon: dict):
     for pokemon in all_pokemon:
         try:
             if all_pokemon[pokemon]['tier'] == tier:
-                out[pokemon] = Pokemon(pokemon, all_pokemon[pokemon].baseStats)
+                print(pokemon)
+                out[pokemon] = Pokemon(pokemon, all_pokemon[pokemon]['baseStats'])
+                
         except:
             pass
     return out

@@ -1,7 +1,8 @@
-import sys
-sys.path.append('/workspace/Pokeforge-AI_Back-End/pokeforge/utils/calc_battle_cython/')
-
-import cython_battle
+# import sys
+# sys.path.append('/workspace/pokeforge/pokeforge/utils/calc_battle_cython/')
+#
+# import cython_battle
+from pokeforge.utils.calc_battle_cython.battle import calc_battle_win
 from random import randint
 
 def calculate_batch_fitness(batch, realmons):
@@ -9,13 +10,11 @@ def calculate_batch_fitness(batch, realmons):
     for pokemon in batch:
         sumA = []
         for pokemon2 in realmons:
-            cython_pokemon_1 = cython_battle.Pokemon(batch[pokemon].name, batch[pokemon].baseStats)
-            cython_pokemon_2 = cython_battle.Pokemon(realmons[pokemon2].name, realmons[pokemon2].baseStats)
-            sumA.append(cython_battle.calc_battle_win(cython_pokemon_1, cython_pokemon_2))
-        try:
-            fullsum.append(sum(sumA) / len(sumA))
-        except:
-            fullsum.append(0)
+            # cython_pokemon_1 = cython_battle.Pokemon(batch[pokemon].name, batch[pokemon].baseStats)
+            # cython_pokemon_2 = cython_battle.Pokemon(realmons[pokemon2].name, realmons[pokemon2].baseStats)
+            # sumA.append(cython_battle.calc_battle_win(cython_pokemon_1, cython_pokemon_2))
+            sumA.append(calc_battle_win(pokemon, realmons[pokemon2]))
+        fullsum.append(sum(sumA) / len(sumA))
     return fullsum
 
 

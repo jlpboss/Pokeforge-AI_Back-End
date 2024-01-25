@@ -5,7 +5,7 @@
     "distutils": {
         "name": "cython_battle",
         "sources": [
-            "/workspace/Pokeforge-AI_Back-End/pokeforge/utils/calc_battle_cython/cython_battle.pyx"
+            "cython_battle.pyx"
         ]
     },
     "module_name": "cython_battle"
